@@ -1,0 +1,148 @@
+.profile {
+  
+//   width: 90%;
+//   justify-content: space-between;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  margin-left: 3rem;
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    // width: 50%;
+    p{
+      cursor: pointer;
+  }
+    .extra {
+      align-items: center;
+      margin-left: -1rem;
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s all ease;
+
+      /* Make the element sticky at its original position with increased height */
+      position: sticky;
+      z-index: 999;
+      top: 5.6rem; /* Adjust the top value to increase the height */
+      background-color: white;
+
+      .ppname {
+        gap: 2rem;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        label{
+          cursor: pointer;
+          display: flex;
+          // flex-direction: row;
+          // justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          img{
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+       
+
+        img {
+          width: 9rem;
+          height: 9rem;
+          object-fit: cover;
+          border-radius: 50%;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        .nameetc {
+          display: flex;
+          flex-direction: column;
+          gap: 0.7rem;
+          padding-top: 2rem;
+
+          button {
+            background-color: #556695;
+            color: white;
+            border: none;
+            height: 1.4rem;
+            border-radius: 3px;
+
+            &:hover {
+              background-color: antiquewhite;
+              transform: scale(1.04);
+              color: black;
+            }
+          }
+
+          .info {
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+          }
+        }
+      }
+
+      hr {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        margin-left: -5rem;
+        margin-right: -5rem;
+      }
+    }
+
+    .yourdesigns {
+      width: 100%;
+      margin-right: 1rem;
+      padding-bottom: 2rem;
+
+      .cards {
+        display: flex;
+        flex-flow: row wrap;
+        // justify-content: space-between;
+        gap:2rem;
+        //   gap: 3px;
+        .file-input {
+         
+          
+          // background-color:#6a82bf;
+          color: #fff;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          display: inline-block;
+          .add {
+            margin-top: 3rem;
+            width: 200px;
+            height: 200px;
+           
+            &:hover {
+              transform: scale(1.07);
+            }
+          }
+          input[type="file"] {
+            display:none;
+          }
+        }
+      }
+      
+    }
+  }
+
+  hr {
+    margin-top: -5rem;
+    // padding: 1rem;
+  }
+
+  
+}

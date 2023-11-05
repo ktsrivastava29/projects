@@ -1,0 +1,195 @@
+.imgc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30rem;
+    // background-image: url("../../../bg-01.jpg");
+    .h1 {
+        height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: #556695;
+      margin-bottom: 15px;
+      width: 60%;
+      border-radius: 3px;
+      font-size: 0.75rem;
+    }
+    .container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    //   padding: 10px;
+      // align-items: center;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      height: 54%;
+      border: none;
+      background-color: #8b99bd;
+      border-radius: 5px;
+      // gap: 30px;
+  
+      .desc {
+        height: 37%;
+        // color: white;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // margin-top: 200rem;
+  
+        // gap: 3px;
+        
+        // color: hsla(0, 0%, 100%, 0.6);
+        padding: 1.6rem;
+        font-size: 1.1rem;
+        // h1 {
+          color: hsla(0, 0%, 100%, 0.8);
+        //   border-radius: 10px;
+        //   position: absolute;
+        //   right:30px;
+        //   padding: 5px;
+        //   // background-color: #6b758f;
+        // }
+        // margin
+  
+        p {
+            margin-top: 17rem;
+          hr {
+            height: 0px;
+            border: solid 0px white;
+          }
+          // position: absolute;
+          // top: 60px;
+        }
+        // position: absolute;
+        margin-top: -10rem;
+      }
+      .prompt {
+        position: absolute;
+        bottom: 50px;
+        // align-self: flex-end;
+        background-color: #556695;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        width: 95%;
+        height: 38%;
+        border-radius: 12px;
+        //   padding-bottom: 20px;
+        .img {
+          img {
+            width: 45px;
+          }
+          position: relative;
+          left: 10px;
+          top: 20px;
+          flex: 1;
+          padding: 5px;
+        }
+        .img :hover {
+          transform: scale(1.2);
+        }
+        .desc-prompt {
+          color: white;
+          flex: 25;
+          padding: 15px;
+          gap: 5px;
+          display: flex;
+          flex-direction: column;
+          font-size: 16px;
+          margin-top: 1rem;
+          margin-left: 0.5rem;
+          input[type="file"] {
+            display: none;
+          }
+          .custom-file-input {
+            background-color:#6a82bf;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+          }
+          .custom-file-input:hover {
+            background-color:#4263bc;
+          }          
+          
+        }
+      }
+      .buttons{
+        display: flex;
+        flex-direction: row;
+        gap : 2rem;
+        margin-top: 14rem;
+        button {
+          width: 100px;
+          height: 30px;
+          
+          font-size: 0.7rem;
+          color: white;
+          background-color: #556695;
+          border: none;
+          border-radius: 7px;
+        }
+        button:hover {
+          color: black;
+          background-color: bisque;
+          transform: scale(1.07);
+        }
+      }
+    }
+    .image-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      backdrop-filter: blur(8px); /* Apply the blur effect */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      .generated-image{
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // gap:1rem;
+        .close{
+          cursor: pointer;
+          position: fixed;
+          top:6rem;
+          left: 0;
+          // align-self: flex-start;
+          // position: relative;
+          // top: 2rem;
+          width: 2rem;
+        padding-left: 1rem;
+          // width: 3rem;
+        }
+        button {
+          width: 100px;
+          height: 30px;
+          position: absolute;
+          bottom: 10px;
+          right: 30px;
+          color: white;
+          background-color: #556695;
+          border: none;
+          border-radius: 7px;
+        }
+        button:hover {
+          color: black;
+          background-color: bisque;
+          transform: scale(1.07);
+        }
+      
+      }
+    }
+  }
+  
